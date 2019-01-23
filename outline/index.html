@@ -10,11 +10,28 @@
 	
 <style>
 
+#container {
+	display: flex;
+	-webkit-flex-flow: wrap;
+	-moz-flex-flow: wrap;
+	-ms-flex-flow: wrap;
+	-o-flex-flow: wrap;
+	flex-flow: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
 #container div {
-	float: left;
 	width: 14.3rem;
 	height: 13rem;
-	margin: 0.3rem;
+	margin: 0.5%;
+	margin-top: 0.8rem;
 }
 
 #container img {
@@ -29,7 +46,9 @@
 }
 
 #container p {
-	margin-left: 3rem;
+	width: 75%;
+	margin: auto;
+	margin-right: 0;
 }
 
 #navigation {
@@ -53,26 +72,39 @@
 
 .arrow {
 	background : url(../images/img_arrow.gif) no-repeat left center;
-	padding-left: 20px;
+	padding-left: 1.2rem;
 }
 
 
 @media screen and (min-width: 1200px) {
 	#navigation {
-		width: 99.5% !important;
+		width: 99.8%;
+	}
+	#container div {
+		width: 16rem;
+		height: 14rem;
 	}
 }
 
 @media screen and (max-width: 900px) {
-
+	#container div {
+		width: 14rem;
+		height: 12.5rem;
+	}
 }
 
-@media screen and (max-width: 700px) {
-
+@media screen and (max-width: 750px) {
+	#container div {
+		width: 13rem;
+		height: 12rem;
+	}
 }
 
 @media screen and (max-width: 480px) {
-
+	#container div {
+		width: 15rem;
+		height: 13.5rem;
+	}
 }
 
 
@@ -89,14 +121,13 @@
 
 <header>
 	<div id="header-img" title="油溪古桥"></div>
-	<div id="nav-menu">
-		<a href="../index.html">首 页</a>
-		<a class="current" href="./index.html">概 要</a>
-		<a href="../tour_guide/index.html">旅游导航</a>
-		<a href="javascript:soon();">防灾信息</a>
-		<a href="javascript:soon();">行政构成</a>
-		<a href="javascript:soon();">统计资料</a>
-	</div>
+	<ul id="nav-menu">
+		<a href="../index.html"><li>首 页</li></a>
+		<a class="current" href="./index.html"><li>乡村概要</li></a>
+		<a href="../sightseeing/index.html"><li>观光旅游</li></a>
+		<a href="javascript:soon();"><li>乡村建设</li></a>
+		<a href="javascript:soon();"><li>党建引领</li></a>
+	</ul>
 </header>
 
 <hr id="hr1"/> <hr id="hr2"/> <hr id="hr3"/> <hr id="hr4"/>
@@ -140,6 +171,12 @@
 
 </div>
 <!-- #container end -->
+
+<hr id="hr1"/> <hr id="hr2"/> <hr id="hr3"/> <hr id="hr4"/>
+
+<footer>
+	合作伙伴：
+</footer>
 
 </body>
 </html>

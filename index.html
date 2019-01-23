@@ -48,7 +48,22 @@
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+	#left_frame {
+		width: 26%;
+		margin: 2px;
+	}
+	#words img {
+		width: 99%;
+		height: 100%;
+		margin: 2px 5px 2px 2px;
+	}
+	#words p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	#left_frame {
 		width: 99%;
 		margin: 2px;
@@ -58,6 +73,9 @@
 		width: 15rem;
 		height: 11.3rem;
 		margin: 2px 5px 2px 2px;
+	}
+	#words p {
+		font-size: 16px;
 	}
 }
 
@@ -75,14 +93,13 @@
 	
 <header>
 	<div id="header-img" title="油溪桥"></div>
-	<div id="nav-menu">
-		<a class="current" href="./index.html">首 页</a>
-		<a href="outline/index.html">概 要</a>
-		<a href="tour_guide/index.html">旅游导航</a>
-		<a href="javascript:soon();">防灾信息</a>
-		<a href="javascript:soon();">行政构成</a>
-		<a href="javascript:soon();">统计资料</a>
-	</div>
+	<ul id="nav-menu">
+		<a class="current" href="./index.html"><li>首 页</li></a>
+		<a href="outline/index.html"><li>乡村概要</li></a>
+		<a href="sightseeing/index.html"><li>观光旅游</li></a>
+		<a href="javascript:soon();"><li>乡村建设</li></a>
+		<a href="javascript:soon();"><li>党建引领</li></a>
+	</ul>
 </header>
 
 <hr id="hr1"/> <hr id="hr2"/> <hr id="hr3"/> <hr id="hr4"/>
@@ -111,7 +128,12 @@
 
 </div>
 <!-- /container -->
-<hr/>
+
+<hr id="hr1"/> <hr id="hr2"/> <hr id="hr3"/> <hr id="hr4"/>
+
+<footer>
+	合作伙伴：
+</footer>
 
 </body>
 </html>
