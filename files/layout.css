@@ -20,16 +20,11 @@ body {
 
 #nav-menu {
 	display: flex;
-	-webkit-flex-flow: wrap;
-	-moz-flex-flow: wrap;
-	-ms-flex-flow: wrap;
-	-o-flex-flow: wrap;
-	flex-flow: wrap;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
